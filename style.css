@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+row {
+    max-width: 1140 px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+.hero {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(bird.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.main-nav li :hover {
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in; 
+    transition: all 0.5s ease-in;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+}
+
+.btn {
+    border: 1px solid #e67e22;
+    padding: 10px 30px;
+    color: #e67e22;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-right: 15px;
+}
+
+.button-awesome {
+    margin-top: 40px;
+}
+
+.btn-half {
+    background-color: #e67e22;
+    color: white;
+
+}
+
+.btn.full:hover {
+    background-color: #e67e22;
+    color: white;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in; 
+    transition: all 0.5s ease-in;
+}
+
+.copy {
+    width: 70%;
+    margin-left: 15%;
+}
+
+h3:after {
+    width: 100px;
+    height: 2px;
+    background-color: #e67e22;
+    display: block;
+    content:" ";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.features h3 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
