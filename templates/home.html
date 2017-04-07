@@ -1,6 +1,121 @@
-<h1>HELLO</h1>
-<form action="user" method="post">
-  <input type="text" name="username">
-  <input type="email" name="email">
-  <input type="submit" value="Submit">
-</form>
+<!DOCTYPE html>
+<head>
+     <title>DC2298</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+    <a href="#" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+     <section class="intro">
+         <div class="inner">
+            <div class="content">
+            <h1>DC2298</h1> 
+            <a class="btn" href="#About">START</a>
+            </div>
+         </div>
+     </section>
+
+    <section class="features" id="About">
+        <h3 class="text-center">WHO WE ARE</h3>
+            <p class="copy">Dc2298 is the first italian defcon group, the Dc2298 was founded  on 2014 in Brescia Italy.</p>
+    </section>
+
+    <section class="work">
+        <h3 class="text-center">WHAT WE DO</h3>
+        <div class="container">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img style="margin-top: 19px;" src="{{ url_for('static', filename = 'img/png/hacker.png') }}" >
+                        <h4>WHITE HAT HACKING</h4>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="{{ url_for('static', filename = 'img/png/Programming.png') }}">
+                        <h4>DEVELOPEMENT</h4>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" >
+                    <img src="{{ url_for('static', filename = 'img/png/research.png') }}" >
+                        <h4>RESEARCH</h4>
+                </div>
+    
+        </div>
+    </section>
+
+    <section class="process">
+        <h3 class="text-center">OUR PROCESS</h3>
+        <div class="container">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="btn">IDEA & CONCEPT</a>        
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="btn">MEET & AGREE</a>        
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="btn">LEARN</a>        
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="btn">CREATE</a>        
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us" id="Contact">
+        <h3 class="text-center">CONTACT US</h3>
+        <div class="fields">
+            <div class="container">
+                <div class="row">    
+                    <form role="form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="Username" class="form-control input-lg" placeholder="Username">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="E-mail" class="form-control input-lg" placeholder="E-mail">
+                            </div>
+
+									 <div class="form-group">
+                                <input type="password" name="Password" class="form-control input-lg" placeholder="E-mail-Password">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="cell-phone" class="form-control input-lg" placeholder="cell-phone">
+                            </div>
+                        </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control input-lg" name="Body" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="button" name="btn" class="btn btn-primary btn-lg btn-block">Contact us</button>
+                    </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ </body>
+ </html>
